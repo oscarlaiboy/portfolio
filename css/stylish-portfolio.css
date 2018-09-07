@@ -8,10 +8,12 @@
 
 
 html,
+
 body {
     width: 100%;
     height: 100%;
-    background-color: #E4F4F4;
+    /*background: linear-gradient(to right, rgba(195, 224, 229,1), rgba(170,205,229 ,1));*/
+   
 }
 
 body {
@@ -80,6 +82,16 @@ body {
 hr.small {
     max-width: 100px;
 }
+hr.big {
+    max-width: 1200px;
+}
+
+.style1 {
+  border: 1px solid #E2E3E4;
+  width:950px
+}
+
+
 
 /*----------------------------------------------- 
 
@@ -159,7 +171,7 @@ nav {
 
 @media (max-width: 750px) {
   nav {
-    background-color: rgba(48, 51, 58, 1);
+    background-color: rgba(0, 51, 102, 1);
     width: 70%;
     right: -55em;
     height: 100%;
@@ -178,6 +190,8 @@ body.nav-expanded {
   -webkit-transition: right 0.4s ease-in-out 0s;
   -moz-transition: right 0.4s ease-in-out 0s;
   -o-transition: right 0.4s ease-in-out 0s;
+
+
 }
 
 #nav-close {
@@ -207,8 +221,9 @@ body.nav-expanded {
 .main-menu li {
     display: inline;
     font-size: 18px;
-    padding: 12px;
-    text-shadow: 2px 2px 5px #000000;
+    padding: 25px;
+    text-shadow: 1px 1px 2px #004a94;
+    
 }
 .list-unstyled {
     padding-left: 0;
@@ -223,6 +238,7 @@ body.nav-expanded {
 }
 
 @media (max-width: 750px) {
+
   .main-menu {
     float: left;
   }
@@ -390,9 +406,24 @@ body.nav-expanded {
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
+   .axos-about {
+      padding-bottom: 50px;
+      padding-top: 100px;
+      padding-right: 100px;
+      padding-left: 250px;
+    }
+      .axos-about2 {
+      padding-bottom: 50px;
+      padding-top: 0px;
+      padding-right: 100px;
+      padding-left: 250px;
+    }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: rgba(43, 48, 55, 1);
+    /*
+    background: rgba(0, 74, 148, 1); */
+    /*background: linear-gradient(to right, rgba(36, 57, 73,1), rgba(48, 67, 82));*/
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   }
 }
 /* Mobile */
@@ -401,6 +432,16 @@ body.nav-expanded {
     background: transparent;
     border: none;
   }
+   .axos-about {
+      padding:30px;
+    }
+ .axos-about2 {
+      padding-top: 0px;
+      padding-bottom:  30px;
+      padding-left:   30px;
+      padding-right:  30px;
+    }
+
   .navbar-custom.top-nav-collapse {
     background: #00253c;
     padding: 0;
@@ -428,6 +469,11 @@ body.nav-expanded {
   .fa-lg {
     font-size: 36px;
     margin-top: 10px;
+  }
+  .project {
+    /*background: linear-gradient(to right, rgba(195, 224, 229,1), rgba(170,205,229 ,1));*/
+    background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));
+   
   }
 }
 
@@ -508,7 +554,42 @@ body.nav-expanded {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url("../img/bg-cover.jpg") no-repeat center center fixed;
+    background: url("../img/Oscar_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.axos {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url("../img/axos_hero3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.urbanoutfielders {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url("../img/urbanoutfielders_hero2.jpg")no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.adamas {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url("../img/adamas_hero.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -517,7 +598,14 @@ body.nav-expanded {
 
 .header-h1{
     padding-top:40px;
-    color: #eee;
+    color: #fff;
+
+}
+
+.header-dark{
+    padding-top:40px;
+    color: #000;
+
 }
 
 /* About */
@@ -526,7 +614,8 @@ body.nav-expanded {
     padding: 50px 0;
 }
 .about-me--img{
-    width: 45%;
+    width: 38%;
+    height: 250px;
 }
 .about-me--container h4{
     line-height: 1.5em !important;
@@ -541,8 +630,8 @@ body.nav-expanded {
     color: #fff;
 }
 .services h5{
-    font-size:16px;
-    line-height:1.6em;
+    font-size:17px;
+    line-height:2em;
 }
 .services p{
     font-size: 16px;
@@ -587,21 +676,101 @@ a.resume-item:hover{
 }
 /* Portfolio */
 
+.nb {
+  border:none;
+}
+
+
 .portfolio {
-    padding: 50px 0;
-    background-color: #E4F4F4;
+    padding: 50px;
+    /*background-color: #fff;
+
+    background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));*/
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+}
+
+.portfolio2 {
+    padding: 0px 0;
+    /*background-color: #173A96;*/
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+}
+
+.axos-about {
+ 
+
+  text-align: center;
+  /*margin-left: 100px;*/
+}
+
+.axos-portfolio{
+  background: #fff;
+
+  text-align: center;
+  /*margin-left: 100px;*/
 }
 
 .portfolio-item {
+    margin-top: 80px;
+    padding-left: 50px;
     margin-bottom: 30px;
 }
+.portfolio-item2 {
+    margin-top: 120px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+
 
 .img-portfolio {
     margin: 0 auto;
 }
 
 .img-portfolio:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+.divider {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project {
+  /*background: linear-gradient(to right, rgba(228,239,233,0), rgba(145,194,226,1));*/
+    background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));
+  padding-top: 50px;
+  padding-bottom: 25px;
+
+}
+.grow:hover
+{
+  opacity: .9;
+  /*
+        transition-timing-function: ease-in-out;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        */
+}
+
+/* Portfolio pages */
+.image {
+    background:url(img/guidedselling.png);
+    height:100px;
+    width:100px;
+    display: block;
+    float:left;
+}
+
+
+.image  a {
+    display: none;
+}
+
+.image  a:hover {
+    display: block;
 }
 
 /* Call to Action */
@@ -638,9 +807,13 @@ a.resume-item:hover{
 /* Footer */
 
 footer {
-    padding: 25px 0;
-    background: rgba(43, 48, 55, 1);
-    color: #fff;
+    padding: 40px;
+    /*
+    background: rgba(0, 51, 102, 1);
+    */
+    /*background: linear-gradient(to right, rgba(195, 224, 229,1), rgba(170,205,229 ,1));*/
+    /*background: linear-gradient(to right, rgba(97, 97, 97,1), rgba(48, 67, 82));*/
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
 
@@ -650,4 +823,53 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+/*
+.odd {
+  position: relative; right: 150px;
+}
+
+.even {
+  position: relative; left: 500px;
+}
+*/
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container2 {
+  position: relative;
+  width: 100%;
+
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 80%;
+  height: 80%;
+}
+.image2 {
+  display: block;
+  width: 80%;
+  height: 40%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: relative; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 80%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container2:hover .overlay {
+  opacity: 1;
 }
