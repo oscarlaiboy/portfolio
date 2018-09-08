@@ -50,6 +50,33 @@ body {
     }
 }
 /* Custom Button Styles */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+.button5 {border-radius: 50%;}
+
+.button1 {
+      border-radius: 100px;
+    padding: 15px 50px 15px 50px;
+    color: black;
+    border-color: black;
+
+}
+
+h5:hover {
+  color: #fff;
+}
+.button1:hover {
+  background: #000;
+}
 
 .btn-dark {
     border-radius: 0;
@@ -88,7 +115,8 @@ hr.big {
 
 .style1 {
   border: 1px solid #E2E3E4;
-  width:950px
+  width:66%;
+  /*margin:10px 20px 10px 20px;*/
 }
 
 
@@ -412,6 +440,17 @@ body.nav-expanded {
       padding-right: 100px;
       padding-left: 250px;
     }
+    .axos-about ul{
+                            display:flex;
+                            flex: 1;
+                            flex-wrap: wrap;
+                            justify-content: left;     
+                        }
+                        .axos-about li{
+                            white-space: nowrap;
+                            font-size: 18px;
+                            margin: 10px 25px;
+                        }
       .axos-about2 {
       padding-bottom: 50px;
       padding-top: 0px;
@@ -576,7 +615,7 @@ body.nav-expanded {
     position: relative;
     width: 100%;
     height: 80%;
-    background: url("../img/urbanoutfielders_hero2.jpg")no-repeat center center fixed;
+    background: url("../img/urbanoutfielders_hero.jpg")no-repeat center center fixed;
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
