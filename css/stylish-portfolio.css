@@ -593,7 +593,7 @@ body.nav-expanded {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url("../img/Oscar_background.jpg") no-repeat center center fixed;
+    background: url("../img/SDbackground.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -653,7 +653,7 @@ body.nav-expanded {
     padding: 50px 0;
 }
 .about-me--img{
-    width: 38%;
+    width: 34%;
     height: 250px;
 }
 .about-me--container h4{
