@@ -436,7 +436,7 @@ body.nav-expanded {
   }
    .axos-about {
       padding-bottom: 50px;
-      padding-top: 0px;
+      padding-top: 100px;
       padding-right: 100px;
       padding-left: 250px;
     }
@@ -453,6 +453,12 @@ body.nav-expanded {
                         }
       .axos-about2 {
       padding-bottom: 50px;
+      padding-top: 0px;
+      padding-right: 100px;
+      padding-left: 250px;
+    }
+       .axos-about3 {
+      padding-bottom: 0px;
       padding-top: 0px;
       padding-right: 100px;
       padding-left: 250px;
@@ -759,8 +765,12 @@ a.resume-item:hover{
     margin-top: 120px;
     padding-left: 50px;
     margin-bottom: 30px;
-}
+  }
 
+.portfolio-item3 {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
 
 
 .img-portfolio {
@@ -846,7 +856,12 @@ a.resume-item:hover{
 /* Footer */
 
 footer {
-    padding: 40px;
+
+    
+     padding-bottom: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+
     /*
     background: rgba(0, 51, 102, 1);
     */
