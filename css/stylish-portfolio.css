@@ -440,23 +440,36 @@ body.nav-expanded {
       padding-right: 100px;
       padding-left: 250px;
     }
+     .axos-aboutrep {
+      padding-bottom: 50px;
+      padding-top: 100px;
+      padding-right: 100px;
+      padding-left: 250px;
+    }
     .axos-about ul{
                             display:flex;
                             flex: 1;
                             flex-wrap: wrap;
                             justify-content: left;     
                         }
-                        .axos-about li{
+     .axos-about li{
                             white-space: nowrap;
                             font-size: 18px;
                             margin: 10px 25px;
                         }
+  
+
       .axos-about2 {
       padding-bottom: 50px;
       padding-top: 0px;
       padding-right: 100px;
       padding-left: 250px;
     }
+     .axos-about2 li{
+                            white-space: nowrap;
+                            font-size: 18px;
+                            margin: 10px 25px;
+                        }
        .axos-about3 {
       padding-bottom: 0px;
       padding-top: 0px;
@@ -629,6 +642,30 @@ body.nav-expanded {
     -o-background-size: cover;
 }
 
+.styleguide {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url("../img/styleguide_bg.jpg")no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.swatrep {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url("../img/swat.jpg")no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 .adamas {
     display: table;
     position: relative;
@@ -728,10 +765,10 @@ a.resume-item:hover{
 
 .portfolio {
     padding: 50px;
-    /*background-color: #fff;
+    background-color: #fff;
 
-    background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));*/
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    /*background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));*/
+  /*background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);*/
  background-blend-mode: screen;
 }
 
@@ -783,7 +820,7 @@ a.resume-item:hover{
 
 .divider {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .project {
@@ -889,13 +926,16 @@ background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 */
 
 /* Container needed to position the overlay. Adjust the width as needed */
+
 .container2 {
   position: relative;
   width: 100%;
+  height: 100%;
 
 }
 
 /* Make the image to responsive */
+
 .image {
   display: block;
   width: 80%;
@@ -903,27 +943,89 @@ background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .image2 {
   display: block;
-  width: 80%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: relative; 
-  bottom: 0; 
+
+ .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1; 
-  width: 80%;
+  width: 100%;
+  height:100%;
   transition: .5s ease;
   opacity:0;
   color: white;
   font-size: 20px;
-  padding: 25px;
+  padding: 0px;
   text-align: center;
 }
 
 /* When you mouse over the container, fade in the overlay title */
+
 .container2:hover .overlay {
   opacity: 1;
 }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*
+
+.container {
+  position: relative;
+  width: 5 0%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+
+}
+*/
