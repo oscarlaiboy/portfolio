@@ -51,9 +51,11 @@ body {
 }
 /* Custom Button Styles */
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
+    /*background-color: #4CAF50;  Green */
+    border-width: medium;
+    /*border-color: #F6594C;*/
+    border-color:  #F88379;
+    color: #F88379;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -65,8 +67,12 @@ body {
 
 .button:hover {
   /*background-color: #4CAF50; /* Green */
-  background-color: rgba(36, 57, 73, 0.7);
+  transition: 0.3s;
+   border-width: none;
+   border-color: none;
+  background-color: #F88379;
   color: white;
+  box-shadow: 0px 3px 10px 2px #FEBBB5;
  
    
 }
@@ -245,9 +251,14 @@ body.nav-expanded {
 }
 
 .main-menu {
-    padding-top: 12px;
+    padding-top: 6px;
     float: right;
 }
+.main-menu2 {
+    padding-top: 12px;
+    
+}
+
 .sidebar-brand{
     position:fixed;
     top:0;
@@ -259,9 +270,16 @@ body.nav-expanded {
 }
 .main-menu li {
     display: inline;
+    font-size: 16px;
+    padding: 25px;
+    /*text-shadow: 0px 0px 1px #29323C;*/
+    
+}
+.main-menu2 li {
+    display: inline;
     font-size: 18px;
     padding: 25px;
-    text-shadow: 1px 1px 2px #004a94;
+  
     
 }
 .list-unstyled {
@@ -269,6 +287,7 @@ body.nav-expanded {
     list-style: none;
 
 }
+
 
 @media (max-width: 800px) {
   .main-menu li {
@@ -297,13 +316,13 @@ body.nav-expanded {
 }
 
 .main-menu li a {
-  color: #f4f4f4;
+  color: #29323C;
   text-decoration: none;
   line-height: 50px;
 }
 
 .main-menu li a:hover {
-  color: rgba(10, 100, 255, 1);
+  color: #F88379;
   text-decoration: none;
 }
 
@@ -381,14 +400,14 @@ body.nav-expanded {
 }
 
 .navbar {
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .navbar-custom .container {
   width: 100%;
 }
 .navbar-custom .logo {
-  width: 40%;
+  width: 30%;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -471,7 +490,7 @@ body.nav-expanded {
   
 
       .axos-about2 {
-      padding-bottom: 50px;
+      padding-bottom: 25px;
       padding-top: 0px;
       padding-right: 100px;
       padding-left: 250px;
@@ -492,9 +511,12 @@ body.nav-expanded {
     /*
     background: rgba(0, 74, 148, 1); */
     /*background: linear-gradient(to right, rgba(36, 57, 73,1), rgba(48, 67, 82));*/
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
- 
+    /*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
+ /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+ background-image: linear-gradient(to right, #dfe9f3 0%, white 100%);
+ opacity: 0.8;
       }
+
 }
 /* Mobile */
 @media (max-width: 750px) {
@@ -776,14 +798,21 @@ a.resume-item:hover{
 
 
 .portfolio {
-    padding: 50px;
+    padding: 45px;
     background-color: #fff;
 
     /*background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));*/
   /*background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);*/
  background-blend-mode: screen;
 }
+.portfolio3 {
+    padding: 0px;
+    background-color: #fff;
 
+    /*background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));*/
+  /*background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);*/
+ background-blend-mode: screen;
+}
 .portfolio2 {
     padding: 0px 0;
     /*background-color: #173A96;*/
@@ -832,7 +861,7 @@ a.resume-item:hover{
 
 .divider {
   padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .project {
@@ -907,7 +936,7 @@ a.resume-item:hover{
 footer {
 
     
-     padding-bottom: 30px;
+     padding-bottom: 50px;
       padding-left: 40px;
       padding-right: 40px;
 
@@ -916,7 +945,7 @@ footer {
     */
     /*background: linear-gradient(to right, rgba(195, 224, 229,1), rgba(170,205,229 ,1));*/
     /*background: linear-gradient(to right, rgba(97, 97, 97,1), rgba(48, 67, 82));*/
-background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); 
+/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
 
 
 }
