@@ -53,8 +53,9 @@ body {
 .button {
     /*background-color: #4CAF50;  Green */
     border-width: medium; 
+    border: 2px solid ;
     /*border-color: #F6594C;*/
-     border-bottom-color:  #F88379;
+     border-color:  #F88379;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
