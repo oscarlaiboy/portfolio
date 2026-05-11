@@ -924,6 +924,91 @@ a.resume-item:hover i{
   padding-bottom: 10px;
 }
 
+/* Tool logo banner sections */
+.tool-banner {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.tool-banner img {
+  max-width: 320px;
+  width: 60%;
+  max-height: 140px;
+  height: auto;
+}
+
+
+.postman-banner {
+  background-color: #ff6c37; /* Postman brand orange */
+}
+
+.postman-banner.tool-banner {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 80px;
+}
+
+.newrelic-banner {
+  background-color: #008c99; /* New Relic teal */
+}
+
+.tool-banner__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.tool-banner__overlay-content {
+  color: #fff;
+  text-align: center;
+}
+
+.tool-banner__overlay-text {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.tool-banner-link {
+  display: block;
+  text-decoration: none;
+}
+
+.tool-banner__overlay--light {
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.tool-banner {
+  position: relative;
+}
+
+.tool-banner--clickable {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-banner--clickable:hover .tool-banner__overlay {
+  opacity: 1;
+}
+
+.tool-banner--clickable:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.18);
+}
+
 .project {
   /*background: linear-gradient(to right, rgba(228,239,233,0), rgba(145,194,226,1));*/
     background: linear-gradient(to right, rgba( 215, 210, 204,1), rgba(97,97,97,1));
